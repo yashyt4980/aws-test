@@ -36,7 +36,7 @@ export const getNumbers = async (req: Request, res: Response) => {
     }
     data.sort((a, b) => a - b);
     res.status(200).json({
-      data,
+      numbers:data,
     });
   } catch (error: any) {
     res.status(500).json({
